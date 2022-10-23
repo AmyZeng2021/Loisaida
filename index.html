@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
 <html lang="en" dir="ltr">
 <head>
@@ -9,58 +9,18 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body onload="openCity(event, 'Energy_Avg')">
-    <div class="sidebar">
-        <div class="logo-details">
-            &nbsp;<img src="Loisaida-Center-Logo-Final-simple.png"
-                       alt="Foo Co.: check your logo's location ...'"
-                       style="width:50px;height:50px;" />
-
-            <span class="logo_name">
-                &nbsp; Loisaida
-            </span>
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href="#" class="active tablinks" onclick="openCity(event, 'Energy_Avg')">
-                    <i class='bx bx-grid-alt'></i>
-                    <span class="links_name"><font color="blue">Average <br />Energy/GHG<br />Measure</font></span>
-                </a>
-            </li>
-            <br />
-            <li>
-                <a href="#" class="active tablinks" onclick="openCity(event, 'Energy_Ttl')">
-                    <i class='bx bx-box'></i>
-                    <span class="links_name"><font color="red">Total <br />Energy/GHG<br />Measure</font></span>
-                </a>
-            </li>
-            <br />
-            <li>
-                <a href="#" class="active tablinks" onclick="openCity(event, 'Pluto')">
-                    <i class='bx bx-list-ul'></i>
-                    <span class="links_name"><font color="yellow">Solar <br />Stormwater <br />Potential</font></span>
-                </a>
-            </li>
-            <br />
-            <li>
-                <a href="#" class="active tablinks" onclick="openCity(event, 'TreeBenefit')">
-                    <i class='bx bx-pie-chart-alt-2'></i>
-                    <span class="links_name"><font color="green">Tree <br />Ecologial <br />Benefits</font></span>
-                </a>
-            </li>
-        </ul>
-    </div>
+<body ">
     <section class="home-section" id="Energy_Avg">
         <nav>
             <div class="sidebar-button">
-                <i class='bx bx-menu sidebarBtn'></i>
-                <span class="dashboard">Manhattan <font color="Green">Average</font> Energy Usage and GHG Emission (2016 - 2020)</span>
+                <span >Loisaida Ecolibrium Dashboards</span>
             </div>
         </nav>
         <div class="home-content">
             <div class='embed-container'>
 
                 <div class="map_box">
+                    <span>Manhattan <font color="Green">Average</font> Energy Usage and GHG Emission (2016 - 2020)</span>
 
                     <iframe src='https://public.tableau.com/views/Loisaida_Energy_Avg/Dash_Energy_avg?:showAppBanner=false&:showVizHome=no&:embed=true&:origin=viz_share_link' frameborder='0'
                             webkitAllowFullScreen
@@ -75,16 +35,11 @@
 
 
     <section class="home-section" id="Energy_Ttl">
-        <nav>
-            <div class="sidebar-button">
-                <i class='bx bx-menu sidebarBtn'></i>
-                <span class="dashboard">Manhattan <font color="Red">Total</font> Energy Usage and GHG Emission (2016 - 2020)</span>
-            </div>
-        </nav>
         <div class="home-content">
             <div class='embed-container'>
 
                 <div class="map_box">
+                    <span class="dashboard">Manhattan <font color="Red">Total</font> Energy Usage and GHG Emission (2016 - 2020)</span>
 
                     <iframe src='https://public.tableau.com/views/Loisaida_Energy_Avg/Dash_Energy_ttl?:showAppBanner=false&:showVizHome=no&:embed=true&:origin=viz_share_link' frameborder='0'
                             webkitAllowFullScreen
@@ -99,16 +54,11 @@
 
 
     <section class="home-section" id="Pluto">
-        <nav>
-            <div class="sidebar-button">
-                <i class='bx bx-menu sidebarBtn'></i>
-                <span class="dashboard"><font color="Orange">Manhattan Building Solar and Storm Water Potentials</font></span>
-            </div>
-        </nav>
         <div class="home-content">
             <div class='embed-container'>
 
                 <div class="map_box">
+                    <span class="dashboard"><font color="Orange">Manhattan Building Solar and Storm Water Potentials</font></span>
 
                     <iframe src='https://public.tableau.com/views/Loisaida_Pluto/Dash_Pluto?:showAppBanner=false&:showVizHome=no&:embed=true&:origin=viz_share_link' frameborder='0'
                             webkitAllowFullScreen
@@ -123,16 +73,12 @@
 
 
     <section class="home-section" id="TreeBenefit">
-        <nav>
-            <div class="sidebar-button">
-                <i class='bx bx-menu sidebarBtn'></i>
-                <span class="dashboard"><font color="Green">Manhattan Tree Map and Ecological Benefits</font></span>
-            </div>
-        </nav>
+
         <div class="home-content">
             <div class='embed-container'>
 
                 <div class="map_box">
+                    <span class="dashboard"><font color="Green">Manhattan Tree Map and Ecological Benefits</font></span>
 
                     <iframe src='https://public.tableau.com/views/LoisaidaTree_Benefits/Dash_Tree?:showAppBanner=false&:showVizHome=no&:embed=true&:origin=viz_share_link' frameborder='0'
                             webkitAllowFullScreen
@@ -158,22 +104,6 @@
         }
     </script>
 
-
-    <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("home-section");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
 
 </body>
 </html>
